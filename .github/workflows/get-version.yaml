@@ -36,3 +36,4 @@ jobs:
         run: |
           echo ${{ steps.get-latest-tag.outputs.tag }}
           echo "version=${{ steps.get-latest-tag.outputs.tag }}" >> GITHUB_OUTPUT
+          echo "${{ env.version }}"
